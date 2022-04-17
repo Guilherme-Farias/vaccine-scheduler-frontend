@@ -4,21 +4,30 @@ import { render, RenderOptions } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { faker } from '@faker-js/faker';
 
+import {
+  MemoryRouter as Router,
+  MemoryRouterProps as RouterProps,
+} from 'react-router-dom';
+
 import { ThemeProvider } from 'styled-components/macro';
 import theme from 'styles/theme';
 import GlobalStyles from 'styles/global';
 
-type CustomRenderProps = Omit<RenderOptions, 'queries'>;
+type CustomRenderProps = {
+  routeProps?: RouterProps;
+} & Omit<RenderOptions, 'queries'>;
 
 const customRender = (
   ui: ReactElement,
-  { ...renderOptions }: CustomRenderProps = {},
+  { routeProps, ...renderOptions }: CustomRenderProps = {},
 ) =>
   render(
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      {ui}
-    </ThemeProvider>,
+    <Router {...routeProps}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        {ui}
+      </ThemeProvider>
+    </Router>,
     renderOptions,
   );
 

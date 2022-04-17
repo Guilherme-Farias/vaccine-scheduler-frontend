@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { MemoryRouter as Router } from "react-router-dom";
+
 import { ThemeProvider } from "styled-components/macro";
 import theme from '../src/styles/theme';
 import GlobalStyles from '../src/styles/global'
@@ -29,9 +31,11 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles removeBg />
-      <Story />
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles removeBg />
+        <Story />
+      </ThemeProvider>
+    </Router>
   )
 ]
