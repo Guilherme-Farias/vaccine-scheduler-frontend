@@ -73,6 +73,11 @@ const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
       height: 100%;
     }
 
+    html {
+      // Silence the warning about missing Reach Dialog styles
+      --reach-dialog: 1;
+    }
+
     body {
       color: ${theme.colors.black};
       ${!removeBg &&

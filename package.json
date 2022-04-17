@@ -18,6 +18,7 @@
     "sb:build": "build-storybook -s public"
   },
   "dependencies": {
+    "@reach/dialog": "^0.16.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^14.1.1",
@@ -25,6 +26,7 @@
     "@types/node": "^17.0.24",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "polished": "^4.2.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
