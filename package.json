@@ -11,6 +11,7 @@
     "test:watch": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --watchAll false",
     "eject": "react-scripts eject",
+    "generate": "plop --plopfile generators/plopfile.js",
     "prepare": "husky install",
     "lint": "eslint src --fix --max-warnings=0",
     "sb": "start-storybook -p 6006 -s public",
@@ -60,6 +61,7 @@
     "husky": "^7.0.4",
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.3.8",
+    "plop": "^3.0.5",
     "prettier": "^2.6.2",
     "webpack": "^5.72.0"
   },
