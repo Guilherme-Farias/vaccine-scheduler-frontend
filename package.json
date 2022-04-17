@@ -2,6 +2,8 @@
   "name": "vaccine-scheduler-frontend",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/Guilherme-Farias/vaccine-scheduler-backend",
+  "author": "Guilherme Farias <guicfarias11@gmail.com>",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -9,7 +11,10 @@
     "test:watch": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --watchAll false",
     "eject": "react-scripts eject",
-    "lint": "eslint src --fix --max-warnings=0"
+    "prepare": "husky install",
+    "lint": "eslint src --fix --max-warnings=0",
+    "sb": "start-storybook -p 6006 -s public",
+    "sb:build": "build-storybook -s public"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -28,6 +33,16 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "@storybook/node-logger": "^6.4.22",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.9",
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
@@ -40,14 +55,17 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.10",
     "husky": "^7.0.4",
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.3.8",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "webpack": "^5.72.0"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.ts(x)?"
+      "src/**/*.ts(x)?",
+      "!src/**/*.stories.ts(x)?"
     ]
   },
   "browserslist": {

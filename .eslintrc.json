@@ -8,6 +8,7 @@
     "airbnb",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -82,5 +83,15 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
 }
