@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render the Copyright 1`] = `
+.c1 {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+.c0 {
+  padding: 1.25rem 0;
+}
+
+.c2 {
+  color: #171923;
+  font-size: 1.125rem;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width:48rem) {
+  .c0 {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width:48rem) {
+  .c2 {
+    font-size: 1rem;
+  }
+}
+
+<footer
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      © 
+      2022
+       Minha Vacina. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+`;
