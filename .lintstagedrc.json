@@ -1,5 +1,6 @@
 {
   "src/**/*.{ts,tsx}": [
-    "yarn lint"
+    "yarn lint",
+    "yarn test --bail --passWithNoTests"
   ]
 }
