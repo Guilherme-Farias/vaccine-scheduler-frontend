@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> should render Hero  1`] = `
+.c0 {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+.c5 {
+  border: 2px solid transparent;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 0.75rem 1.25rem;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c5:focus {
+  outline-color: #D03E35;
+  outline-offset: 4px;
+}
+
+.c6 {
+  background-color: #D03E35;
+  color: #FFFFFF;
+}
+
+.c6:hover {
+  background-color: #bf352c;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.c2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.c3 {
+  color: #D03E35;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 300px;
+  margin-top: 3rem;
+}
+
+@media (max-width:68.75rem) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width:68.75rem) {
+  .c2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width:68.75rem) {
+  .c4 {
+    max-width: revert;
+    -webkit-align-items: revert;
+    -webkit-box-align: revert;
+    -ms-flex-align: revert;
+    align-items: revert;
+    margin-top: 1.75rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <section>
+      <h2
+        class="c2"
+      >
+        Bem vindo ao 
+        <strong
+          class="c3"
+        >
+          Minha vacina
+        </strong>
+         o sistema de agendamento da vacina de COVID-19
+      </h2>
+      <div
+        class="c4"
+      >
+        <button
+          class="c5 c6"
+          color="primary"
+        >
+          Liste os agendamentos
+        </button>
+        <button
+          class="c5 c6"
+          color="primary"
+        >
+          Faça seu agendamento
+        </button>
+      </div>
+    </section>
+    <img
+      alt="Enfermeira vacinando um paciente"
+      src="hero-img.svg"
+      title="Ilustração de uma pessoa com máscara sendo vacinada, vetor criado por Storyset - www.freepik.com/people"
+    />
+  </div>
+</div>
+`;
