@@ -1,5 +1,6 @@
 import React from 'react';
+import Hero from 'components/Hero';
 
-const Home: React.FC = () => <h1>Minha Vacina</h1>;
+const Home: React.FC = () => <Hero />;
 
 export default Home;
