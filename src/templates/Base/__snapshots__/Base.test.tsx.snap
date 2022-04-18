@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Base /> should render the Base template 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.875rem;
+}
+
+.c6 {
+  margin-right: 0.25rem;
+}
+
+.c6 > svg {
+  font-size: inherit;
+}
+
+.c7 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+.c13 {
+  position: absolute;
+  overflow: hidden;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.c1 {
+  background-color: #D03E35;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 5rem;
+  color: #FFFFFF;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.c10 + li {
+  margin-left: 0.75rem;
+}
+
+.c4 {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+  font-size: 1.125rem;
+  margin: 3px 0.75rem 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.c4:hover::after,
+.c4:focus::after,
+.c4.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 3px;
+  background-color: #FFC801;
+  -webkit-animation: hoverAnimation 0.2s forwards;
+  animation: hoverAnimation 0.2s forwards;
+}
+
+.c11 {
+  display: none;
+}
+
+.c12 {
+  color: inherit;
+  display: block;
+  border: none;
+  background: transparent;
+  text-align: left;
+  padding: 1rem;
+}
+
+.c12:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c15 {
+  padding: 1.25rem 0;
+}
+
+.c16 {
+  color: #171923;
+  font-size: 1.125rem;
+  margin: auto;
+  text-align: center;
+}
+
+.c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c14 {
+  margin: 3rem 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c14 > * {
+  height: 100%;
+}
+
+@media (max-width:48rem) {
+  .c5 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:48rem) {
+  .c8 {
+    display: none;
+  }
+}
+
+@media (max-width:48rem) {
+  .c11 {
+    display: revert;
+  }
+}
+
+@media (max-width:48rem) {
+  .c15 {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width:48rem) {
+  .c16 {
+    font-size: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <header
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <a
+          aria-current="page"
+          class="c4 active"
+          href="/"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M201.5 174.8l55.7 55.8c3.1 3.1 3.1 8.2 0 11.3l-11.3 11.3c-3.1 3.1-8.2 3.1-11.3 0l-55.7-55.8-45.3 45.3 55.8 55.8c3.1 3.1 3.1 8.2 0 11.3l-11.3 11.3c-3.1 3.1-8.2 3.1-11.3 0L111 265.2l-26.4 26.4c-17.3 17.3-25.6 41.1-23 65.4l7.1 63.6L2.3 487c-3.1 3.1-3.1 8.2 0 11.3l11.3 11.3c3.1 3.1 8.2 3.1 11.3 0l66.3-66.3 63.6 7.1c23.9 2.6 47.9-5.4 65.4-23l181.9-181.9-135.7-135.7-64.9 65zm308.2-93.3L430.5 2.3c-3.1-3.1-8.2-3.1-11.3 0l-11.3 11.3c-3.1 3.1-3.1 8.2 0 11.3l28.3 28.3-45.3 45.3-56.6-56.6-17-17c-3.1-3.1-8.2-3.1-11.3 0l-33.9 33.9c-3.1 3.1-3.1 8.2 0 11.3l17 17L424.8 223l17 17c3.1 3.1 8.2 3.1 11.3 0l33.9-34c3.1-3.1 3.1-8.2 0-11.3l-73.5-73.5 45.3-45.3 28.3 28.3c3.1 3.1 8.2 3.1 11.3 0l11.3-11.3c3.1-3.2 3.1-8.2 0-11.4z"
+                />
+              </svg>
+            </div>
+            <h1
+              class="c7"
+            >
+              Minha 
+              <strong>
+                Vacina
+              </strong>
+            </h1>
+          </div>
+        </a>
+        <nav
+          class="c8"
+        >
+          <ul
+            class="c9"
+          >
+            <li
+              class="c10"
+            >
+              <a
+                class="c4"
+                href="/agendamentos"
+                title="Página de listagem de agendamentos"
+              >
+                Agendamentos
+              </a>
+            </li>
+            <li
+              class="c10"
+            >
+              <a
+                class="c4"
+                href="/agendamentos/novo"
+                title="Página para criação de um novo agendamento"
+              >
+                Agendar
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="c11"
+        >
+          <button
+            class="c12"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              />
+            </svg>
+            <div
+              class="c13"
+            >
+              Abrir menu
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main
+    class="c14"
+  />
+  <footer
+    class="c15"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c16"
+      >
+        © 
+        2022
+         Minha Vacina. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</div>
+`;
