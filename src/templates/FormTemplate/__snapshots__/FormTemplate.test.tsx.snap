@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormTemplate /> should render the heading 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+.c1 {
+  margin: auto;
+  height: 100%;
+  max-width: 420px;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.c3 {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h2
+      class="c2"
+    >
+      Title
+    </h2>
+    <p
+      class="c3"
+    >
+      description
+    </p>
+    <section>
+      <form
+        data-testid="test"
+      />
+    </section>
+  </div>
+</div>
+`;
