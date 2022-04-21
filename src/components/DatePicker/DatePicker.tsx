@@ -1,10 +1,13 @@
 import React from 'react';
+import ptBR from 'date-fns/locale/pt-BR';
 
-import { ReactDatePickerProps } from 'react-datepicker';
+import { ReactDatePickerProps, registerLocale } from 'react-datepicker';
 
 import { FormLabel, FormErrorMessage } from 'components/FormControls';
 
 import * as S from './styles';
+
+registerLocale('pt-BR', ptBR);
 
 export type DatePickerProps = {
   label?: string;
@@ -20,6 +23,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
   readOnly,
   className,
   style,
+  locale = 'pt-BR',
   ...props
 }: DatePickerProps) => (
   <S.StyledFormGroup
@@ -38,6 +42,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
       name={name}
       disabled={disabled}
       readOnly={readOnly}
+      locale={locale}
       {...(label ? { id: name } : {})}
       {...props}
     />
