@@ -74,13 +74,13 @@ export const OutlineButton = styled(ButtonBase)`
 export const GhostButton = styled(ButtonBase)`
   ${({ theme }) => css`
     background-color: transparent;
-    color: ${theme.colors.gray};
+    color: ${theme.colors['gray-500']};
 
     &:focus {
-      outline-color: ${theme.colors.gray};
+      outline-color: ${theme.colors['gray-500']};
     }
     &:hover {
-      background-color: ${transparentize(0.85, theme.colors.gray)};
+      background-color: ${transparentize(0.85, theme.colors['gray-500'])};
       color: ${theme.colors.black};
     }
   `}

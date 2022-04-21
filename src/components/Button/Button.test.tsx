@@ -51,7 +51,7 @@ describe('<Button />', () => {
     render(<Button variant="ghost">Test</Button>);
     expect(screen.getByRole('button', { name: /test/i })).toHaveStyle({
       'background-color': 'transparent',
-      color: theme.colors.gray,
+      color: theme.colors['gray-500'],
     });
   });
   it('should throw error when unrecognized Button variant is provided', () => {

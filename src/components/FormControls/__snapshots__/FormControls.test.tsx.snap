@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormControls /> should render the FormControls 1`] = `
+.c0 {
+  cursor: pointer;
+  display: inline-block;
+  color: #171923;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  color: #DC2626;
+  font-size: 0.875rem;
+}
+
+<div
+  class=""
+  role="group"
+>
+  <label
+    class="c0"
+    for="test"
+  >
+    Test
+  </label>
+  <input
+    id="test"
+  />
+  <span
+    class="c1"
+    role="alert"
+  />
+</div>
+`;

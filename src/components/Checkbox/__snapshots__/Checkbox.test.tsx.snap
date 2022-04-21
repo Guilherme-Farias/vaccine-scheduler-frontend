@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should render with label 1`] = `
+.c2 {
+  cursor: pointer;
+  display: inline-block;
+  color: #171923;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: var(--checkbox-size);
+  min-width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  min-height: var(--checkbox-size);
+  border: 2px solid #4b5563;
+  border-radius: 2px;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.c1:before {
+  content: '';
+  width: 7px;
+  height: 10px;
+  border: 2.5px solid #FFFFFF;
+  border-top: 0;
+  border-left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  opacity: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.c1:focus {
+  box-shadow: #2563eb 0px 0px 0px 1px;
+}
+
+.c1:hover {
+  border-color: #171923;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.c1:checked {
+  border-color: #D03E35;
+  background: #D03E35;
+}
+
+.c1:checked:before {
+  opacity: 1;
+}
+
+.c1:disabled {
+  border-color: #6b7280;
+  background-color: #d1d5db;
+}
+
+.c1:disabled:checked {
+  background: #81241e;
+  border-color: #81241e;
+}
+
+.c3 {
+  margin-bottom: revert;
+  line-height: var(--checkbox-size);
+  padding-left: 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  --checkbox-size: 20px;
+}
+
+<div
+  class=" c0"
+  role="group"
+>
+  <input
+    class="c1"
+    id="checkbox_name"
+    name="checkbox_name"
+    type="checkbox"
+  />
+  <label
+    class="c2 c3"
+    for="checkbox_name"
+  >
+    checkbox label
+  </label>
+</div>
+`;
