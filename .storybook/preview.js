@@ -5,6 +5,7 @@ import { MemoryRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components/macro";
 import theme from '../src/styles/theme';
 import GlobalStyles from '../src/styles/global'
+import { ToastContainer } from 'react-toastify';
 
 export const parameters = {
   backgrounds: {
@@ -35,6 +36,7 @@ export const decorators = [
       <ThemeProvider theme={theme}>
         <GlobalStyles removeBg />
         <Story />
+        <ToastContainer position="bottom-right" />
       </ThemeProvider>
     </Router>
   )

@@ -8,6 +8,7 @@ import {
   MemoryRouter as Router,
   MemoryRouterProps as RouterProps,
 } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import { ThemeProvider } from 'styled-components/macro';
 import theme from 'styles/theme';
@@ -26,6 +27,7 @@ const customRender = (
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         {ui}
+        <ToastContainer position="bottom-right" />
       </ThemeProvider>
     </Router>,
     renderOptions,
