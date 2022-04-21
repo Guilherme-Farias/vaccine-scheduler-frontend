@@ -5,7 +5,7 @@ import VisuallyHidden from '.';
 describe('<VisuallyHidden />', () => {
   it('should not be able to show children when Alt key is not pressed', () => {
     const { container } = render(<VisuallyHidden>Test</VisuallyHidden>);
-    expect(container).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         position: absolute;
         overflow: hidden;
@@ -18,12 +18,10 @@ describe('<VisuallyHidden />', () => {
         border: 0;
       }
 
-      <div>
-        <div
-          class="c0"
-        >
-          Test
-        </div>
+      <div
+        class="c0"
+      >
+        Test
       </div>
     `);
   });
@@ -33,12 +31,10 @@ describe('<VisuallyHidden />', () => {
     fireEvent.keyDown(document, {
       key: 'Alt',
     });
-    expect(container).toMatchInlineSnapshot(`
-      <div>
-        <span>
-          Test
-        </span>
-      </div>
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      <span>
+        Test
+      </span>
     `);
   });
 
@@ -48,18 +44,16 @@ describe('<VisuallyHidden />', () => {
     fireEvent.keyDown(document, {
       key: 'Alt',
     });
-    expect(container).toMatchInlineSnapshot(`
-      <div>
-        <span>
-          Test
-        </span>
-      </div>
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      <span>
+        Test
+      </span>
     `);
 
     fireEvent.keyUp(document, {
       key: 'Alt',
     });
-    expect(container).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         position: absolute;
         overflow: hidden;
@@ -72,12 +66,10 @@ describe('<VisuallyHidden />', () => {
         border: 0;
       }
 
-      <div>
-        <div
-          class="c0"
-        >
-          Test
-        </div>
+      <div
+        class="c0"
+      >
+        Test
       </div>
     `);
   });

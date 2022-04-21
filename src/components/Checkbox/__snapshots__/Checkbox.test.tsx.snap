@@ -75,6 +75,16 @@ exports[`<Checkbox /> should render with label 1`] = `
   opacity: 1;
 }
 
+.c1:disabled {
+  border-color: #6b7280;
+  background-color: #d1d5db;
+}
+
+.c1:disabled:checked {
+  background: #81241e;
+  border-color: #81241e;
+}
+
 .c3 {
   margin-bottom: revert;
   line-height: var(--checkbox-size);
