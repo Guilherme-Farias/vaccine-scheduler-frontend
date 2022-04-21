@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should render the Spinner 1`] = `
+.c1 {
+  position: absolute;
+  overflow: hidden;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.c0 {
+  --spinner-size: 2rem;
+  display: inline-block;
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  vertical-align: -0.125em;
+  border: 0.25rem solid #9ca3af;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite rotate;
+  animation: 0.75s linear infinite rotate;
+}
+
+<div
+  class="c0"
+  color="gray-400"
+  role="status"
+>
+  <div
+    class="c1"
+  >
+    Carregando...
+  </div>
+</div>
+`;

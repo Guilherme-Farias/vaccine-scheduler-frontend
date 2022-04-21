@@ -28,11 +28,15 @@ exports[`<ListTemplate /> should render the ListTemplate 1`] = `
   <div
     class="c1"
   >
-    <h2
-      class="c2"
+    <div
+      style="display: flex; align-items: center; gap: 10px;"
     >
-      Title
-    </h2>
+      <h2
+        class="c2"
+      >
+        Title
+      </h2>
+    </div>
     <p
       class="c3"
     >
