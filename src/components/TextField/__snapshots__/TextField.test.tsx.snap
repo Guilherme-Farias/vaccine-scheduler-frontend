@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should render with error 1`] = `
+.c1 {
+  cursor: pointer;
+  display: inline-block;
+  color: #171923;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #DC2626;
+}
+
+.c4 {
+  color: #DC2626;
+  font-size: 0.875rem;
+}
+
+.c3 {
+  color: #171923;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  height: 2.5rem;
+  background: #FFFFFF;
+  border-radius: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid;
+  border-color: #6b7280;
+  -webkit-transition: border-color 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.c3:hover {
+  border-color: #4b5563;
+  box-shadow: #4b5563 0px 0px 0px 1px;
+}
+
+.c3:focus {
+  border-color: #2563eb;
+  box-shadow: #2563eb 0px 0px 0px 1px;
+}
+
+.c0 .c2 {
+  border-color: #DC2626;
+}
+
+.c0 .c2:focus {
+  box-shadow: #DC2626 0px 0px 0px 1px;
+}
+
+<div
+  class=" c0"
+  role="group"
+>
+  <label
+    class="c1"
+    for="test"
+  >
+    Test
+  </label>
+  <input
+    class="c2 c3"
+    id="test"
+    name="test"
+  />
+  <span
+    class="c4"
+    role="alert"
+  >
+    Error message
+  </span>
+</div>
+`;
