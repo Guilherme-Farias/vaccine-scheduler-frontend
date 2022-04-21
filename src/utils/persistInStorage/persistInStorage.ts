@@ -5,7 +5,7 @@ function getStorageItem<T>(
   key: string,
   initialValue: T,
   storage: Storages = 'localStorage',
-) {
+): T {
   const data = window[storage].getItem(`${STORAGE_KEY}_${key}`);
   return data ? JSON.parse(data) : initialValue;
 }
