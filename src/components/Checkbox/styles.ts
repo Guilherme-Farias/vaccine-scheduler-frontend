@@ -1,4 +1,4 @@
-import styled, { css, DefaultTheme } from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { darken } from 'polished';
 
 import { FormGroup, FormLabel } from 'components/FormControls';
@@ -54,6 +54,14 @@ export const Input = styled.input<InputProps>`
         opacity: 1;
       }
     }
+    &:disabled {
+      border-color: ${theme.colors['gray-500']};
+      background-color: ${theme.colors['gray-300']};
+      &:checked {
+        background: ${darken(0.2, theme.colors[fillColor!])};
+        border-color: ${darken(0.2, theme.colors[fillColor!])};
+      }
+    }
   `}
 `;
 
@@ -67,29 +75,20 @@ export const StyledFormLabel = styled(FormLabel)`
 `;
 
 const styledFormGroupModifiers = {
-  isDisabled: (theme: DefaultTheme) => css`
+  isDisabled: () => css`
     &,
     * {
       cursor: not-allowed;
-    }
-
-    ${Input} {
-      border-color: ${theme.colors['gray-500']};
-      background-color: ${theme.colors['gray-300']};
-      &:checked {
-        background: ${darken(0.2, theme.colors.primary)};
-        border-color: ${darken(0.2, theme.colors.primary)};
-      }
     }
   `,
 };
 
 export const StyledFormGroup = styled(FormGroup)`
-  ${({ theme, isDisabled }) => css`
+  ${({ isDisabled }) => css`
     display: flex;
     align-items: center;
     --checkbox-size: 20px;
 
-    ${!!isDisabled && styledFormGroupModifiers.isDisabled(theme)};
+    ${!!isDisabled && styledFormGroupModifiers.isDisabled()};
   `}
 `;
