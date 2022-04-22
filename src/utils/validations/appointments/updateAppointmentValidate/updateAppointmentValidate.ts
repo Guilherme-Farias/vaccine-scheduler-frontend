@@ -1,15 +1,16 @@
 import Joi from 'joi';
 import { getFieldErrors } from 'utils/validations/helpers';
 
-import { CreateAppointmentFormData } from 'types/appointments';
+import { UpdateAppointmentFormData } from 'types/appointments';
 import { fieldsValidations } from 'utils/validations/fieldsValidations';
 
-export function createAppointmentValidate(values: CreateAppointmentFormData) {
-  const { name, birth_date, appointment_date } = fieldsValidations;
+export function updateAppointmentValidate(values: UpdateAppointmentFormData) {
+  const { name, birth_date, appointment_date, vaccinated } = fieldsValidations;
   const schema = Joi.object({
     name,
     birth_date,
     appointment_date,
+    vaccinated,
   });
 
   return getFieldErrors(schema.validate(values, { abortEarly: false }));

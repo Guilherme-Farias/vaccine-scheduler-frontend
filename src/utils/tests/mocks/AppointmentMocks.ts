@@ -1,5 +1,9 @@
 import { faker } from '@faker-js/faker';
-import { CreateAppointmentFormData, IAppointment } from 'types/appointments';
+import {
+  CreateAppointmentFormData,
+  UpdateAppointmentFormData,
+  IAppointment,
+} from 'types/appointments';
 
 export const makeCreateAppointmentFormData = (
   overrides?: Partial<CreateAppointmentFormData>,
@@ -7,6 +11,15 @@ export const makeCreateAppointmentFormData = (
   name: faker.name.findName(),
   birth_date: faker.date.past(10),
   appointment_date: faker.date.future(),
+  ...overrides,
+});
+export const makeUpdateAppointmentFormData = (
+  overrides?: Partial<UpdateAppointmentFormData>,
+): UpdateAppointmentFormData => ({
+  name: faker.name.findName(),
+  birth_date: faker.date.past(10),
+  appointment_date: faker.date.future(),
+  vaccinated: false,
   ...overrides,
 });
 
