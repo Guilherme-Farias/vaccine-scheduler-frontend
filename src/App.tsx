@@ -1,9 +1,8 @@
 import React from 'react';
-
+import './bootstrap';
 import { ThemeProvider } from 'styled-components/macro';
 import GlobalStyles from 'styles/global';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import theme from 'styles/theme';
 import Routes from 'routes';
 
