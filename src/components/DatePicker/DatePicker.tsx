@@ -23,7 +23,13 @@ const DatePicker: React.FC<DatePickerProps> = ({
   readOnly,
   className,
   style,
+  showMonthDropdown = true,
+  showYearDropdown = true,
+  peekNextMonth = true,
+  dropdownMode = 'select',
+  dateFormat = 'P',
   locale = 'pt-BR',
+  autoComplete = 'nope',
   ...props
 }: DatePickerProps) => (
   <S.StyledFormGroup
@@ -42,7 +48,13 @@ const DatePicker: React.FC<DatePickerProps> = ({
       name={name}
       disabled={disabled}
       readOnly={readOnly}
+      dateFormat={dateFormat}
       locale={locale}
+      peekNextMonth={peekNextMonth}
+      dropdownMode={dropdownMode}
+      autoComplete={autoComplete}
+      showMonthDropdown={showMonthDropdown}
+      showYearDropdown={showYearDropdown}
       {...(label ? { id: name } : {})}
       {...props}
     />

@@ -66,6 +66,7 @@ exports[`<DatePicker /> should render with error 1`] = `
       class="react-datepicker__input-container"
     >
       <input
+        autocomplete="nope"
         class="c2 c3"
         id="test"
         name="test"
