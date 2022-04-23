@@ -1,5 +1,5 @@
 type Storages = 'localStorage' | 'sessionStorage';
-const STORAGE_KEY = process.env.REACT_APP_STORAGE_KEY;
+const STORAGE_KEY = process.env.REACT_APP_STORAGE_KEY || 'MINHA_VACINA';
 
 function getStorageItem<T>(
   key: string,
@@ -19,4 +19,8 @@ function setStorageItem<T>(
   return window[storage].setItem(`${STORAGE_KEY}_${key}`, data);
 }
 
-export { getStorageItem, setStorageItem };
+function removeStorageItem(key: string, storage: Storages = 'localStorage') {
+  return window[storage].removeItem(`${STORAGE_KEY}_${key}`);
+}
+
+export { getStorageItem, setStorageItem, removeStorageItem };
