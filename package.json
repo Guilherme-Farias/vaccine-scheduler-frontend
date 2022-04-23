@@ -79,7 +79,13 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.ts(x)?",
-      "!src/**/*.stories.ts(x)?"
+      "!src/**/*.stories.ts(x)?",
+      "!src/errors/**",
+      "!src/styles/**",
+      "!src/routes/**",
+      "!src/services/**",
+      "!src/types/**",
+      "!src/utils/**/index.ts"
     ]
   },
   "browserslist": {
