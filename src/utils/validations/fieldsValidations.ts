@@ -7,7 +7,7 @@ export const fieldsValidations = {
     'any.required': 'Campo obrigatório!',
   }),
   birth_date: Joi.date().iso().less('now').required().messages({
-    'date.base': '`birth_date` deve ser do tipo `date`',
+    'date.base': 'Campo obrigatório!',
     'date.format': 'A data deve seguir padrão ISO',
     'date.less': 'A data de nascimento deve ser menor do que o dia atual',
     'any.required': 'Campo obrigatório!',

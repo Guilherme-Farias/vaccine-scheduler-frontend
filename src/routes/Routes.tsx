@@ -5,6 +5,7 @@ import Home from 'pages/Home';
 import Appointments from 'pages/Appointments';
 import CreateAppointment from 'pages/CreateAppointment';
 import UpdateAppointment from 'pages/UpdateAppointment';
+import Error404 from 'pages/Error404';
 
 const Routes = () => {
   return (
@@ -16,6 +17,7 @@ const Routes = () => {
           <Route path="novo" element={<CreateAppointment />} />
           <Route path=":id/editar" element={<UpdateAppointment />} />
         </Route>
+        <Route element={<Error404 />} path="*" />
       </Route>
     </Switch>
   );

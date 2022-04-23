@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound /> should render NotFound  1`] = `
+.c0 {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+.c5 {
+  border: 2px solid transparent;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c5:focus {
+  outline-color: #D03E35;
+  outline-offset: 4px;
+}
+
+.c6 {
+  background-color: transparent;
+  color: #D03E35;
+  border: 2px solid currentColor;
+}
+
+.c6:hover {
+  background-color: rgba(208,62,53,0.1);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.c2 {
+  font-size: 2.5rem;
+}
+
+.c3 {
+  font-size: 1.125rem;
+}
+
+.c4 {
+  max-width: 300px;
+  margin-top: 3rem;
+}
+
+.c7 {
+  max-width: 628px;
+}
+
+@media (max-width:68.75rem) {
+  .c1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width:68.75rem) {
+  .c2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width:68.75rem) {
+  .c4 {
+    max-width: revert;
+    margin-top: 1.75rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <section>
+      <h2
+        class="c2"
+      >
+        Algo não está certo...
+      </h2>
+      <p
+        class="c3"
+      >
+        A página que você está tentando abrir não existe. Você pode ter digitado incorretamente o endereço ou a página foi movido para outra URL. Se você acha que isso é um erro, entre em contato com o suporte.
+      </p>
+      <div
+        class="c4"
+      >
+        <button
+          class="c5 c6"
+          color="primary"
+        >
+          Voltar para a página inicial
+        </button>
+      </div>
+    </section>
+    <img
+      alt="Uma mulher procurando por algo e não achando. O fundo da imagem é número 404"
+      class="c7"
+      src="not-found.svg"
+      title="Ilustração do error 404 no servidor (Não encontrado), vetor criado por Storyset - www.freepik.com/vectors/server-error"
+    />
+  </div>
+</div>
+`;

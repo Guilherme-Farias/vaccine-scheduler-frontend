@@ -1,4 +1,4 @@
-import { getStorageItem, setStorageItem } from '.';
+import { getStorageItem, setStorageItem, removeStorageItem } from '.';
 
 describe('persistInStorage', () => {
   describe('localStorage', () => {
@@ -25,6 +25,13 @@ describe('persistInStorage', () => {
       expect(window.localStorage.getItem('MINHA_VACINA_test')).toStrictEqual(
         JSON.stringify(value),
       );
+    });
+    it('should remove item from sessionStorage', () => {
+      const value = 'Test';
+
+      window.localStorage.setItem('MINHA_VACINA_test', JSON.stringify(value));
+      removeStorageItem('test', 'localStorage');
+      expect(window.localStorage.getItem('MINHA_VACINA_test')).toBe(null);
     });
   });
 
@@ -57,6 +64,13 @@ describe('persistInStorage', () => {
       expect(window.sessionStorage.getItem('MINHA_VACINA_test')).toStrictEqual(
         JSON.stringify(value),
       );
+    });
+    it('should remove item from sessionStorage', () => {
+      const value = 'Test';
+
+      window.sessionStorage.setItem('MINHA_VACINA_test', JSON.stringify(value));
+      removeStorageItem('test', 'sessionStorage');
+      expect(window.sessionStorage.getItem('MINHA_VACINA_test')).toBe(null);
     });
   });
 });

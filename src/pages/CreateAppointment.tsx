@@ -8,7 +8,11 @@ import CreateAppointmentForm from 'components/CreateAppointmentForm';
 import api, { getHttpError } from 'services/api';
 
 import { CreateAppointmentFormData } from 'types/appointments';
-import { getStorageItem, setStorageItem } from 'utils/persistInStorage';
+import {
+  getStorageItem,
+  setStorageItem,
+  removeStorageItem,
+} from 'utils/persistInStorage';
 
 const storageKey = 'createAppointmentFormData';
 const storageType = 'sessionStorage';
@@ -40,6 +44,7 @@ const CreateAppointment: React.FC = () => {
       try {
         await api.post('/appointments', data);
         toast.success('Agendamento cadastrado com sucesso');
+        removeStorageItem(storageKey, storageType);
         navigate('/agendamentos');
       } catch (reqError) {
         toast.error(getHttpError(reqError).message);

@@ -71,7 +71,7 @@ const Template: ComponentStory<typeof DatePicker> = args => (
 export const Default = Template.bind({});
 Default.args = {
   label: 'Select the date',
-  error: 'Error',
+  error: '',
   placeholderText: 'dd/mm/aaaa',
   onChange: () => console.log('onChange'),
 };

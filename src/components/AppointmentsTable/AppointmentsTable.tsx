@@ -8,12 +8,12 @@ import Button from 'components/Button';
 import { formatDate, formatDateWithHours } from 'utils/formatters';
 import { IAppointment } from 'types/appointments';
 
-import { useNavigate } from 'react-router-dom';
 import * as S from './styles';
 
 export type AppointmentsTableProps = {
   appointmentsList: IAppointment[];
   vaccinatedToggle(appointmentId: string): Promise<void>;
+  editAction(id: string): void;
   isLoading: boolean;
   errorMsg?: string;
 };
@@ -21,10 +21,10 @@ export type AppointmentsTableProps = {
 const AppointmentsTable: React.FC<AppointmentsTableProps> = ({
   appointmentsList,
   vaccinatedToggle,
+  editAction,
   isLoading,
   errorMsg,
 }: AppointmentsTableProps) => {
-  const navigate = useNavigate();
   // if is errored
   if (errorMsg) {
     toast.error(errorMsg);
@@ -104,7 +104,7 @@ const AppointmentsTable: React.FC<AppointmentsTableProps> = ({
                   type="button"
                   size="small"
                   disabled={isLoading}
-                  onClick={() => navigate(`/agendamentos/${appt.id}/editar`)}
+                  onClick={() => editAction(appt.id)}
                 >
                   Editar
                   <VisuallyHidden> {appt.name}</VisuallyHidden>

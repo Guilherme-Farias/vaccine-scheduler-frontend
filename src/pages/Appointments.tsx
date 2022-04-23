@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import ListTemplate from 'templates/ListTemplate';
 import AppointmentsTable from 'components/AppointmentsTable';
@@ -11,6 +12,7 @@ import { IAppointment } from 'types/appointments';
 
 const storageKey = 'appointments';
 const Appointments: React.FC = () => {
+  const navigate = useNavigate();
   const [appointments, setAppointments] = useState<IAppointment[]>(() =>
     getStorageItem<IAppointment[]>(storageKey, []),
   );
@@ -65,6 +67,7 @@ const Appointments: React.FC = () => {
       <AppointmentsTable
         appointmentsList={appointments}
         vaccinatedToggle={vaccinatedToggle}
+        editAction={id => navigate(`/agendamentos/${id}/editar`)}
         isLoading={isLoading}
         errorMsg={error.message}
       />
