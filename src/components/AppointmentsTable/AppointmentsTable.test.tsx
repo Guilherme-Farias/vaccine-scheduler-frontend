@@ -14,6 +14,7 @@ describe('<AppointmentsTable />', () => {
       <AppointmentsTable
         appointmentsList={appointments}
         vaccinatedToggle={jest.fn()}
+        editAction={jest.fn()}
         isLoading={false}
       />,
     );
@@ -26,6 +27,7 @@ describe('<AppointmentsTable />', () => {
       <AppointmentsTable
         appointmentsList={[]}
         vaccinatedToggle={jest.fn()}
+        editAction={jest.fn()}
         isLoading
       />,
     );
@@ -36,6 +38,7 @@ describe('<AppointmentsTable />', () => {
       <AppointmentsTable
         appointmentsList={[]}
         vaccinatedToggle={jest.fn()}
+        editAction={jest.fn()}
         isLoading={false}
         errorMsg="Some error"
       />,
@@ -48,6 +51,7 @@ describe('<AppointmentsTable />', () => {
       <AppointmentsTable
         appointmentsList={appointments}
         vaccinatedToggle={vaccinatedToggle}
+        editAction={jest.fn()}
         isLoading={false}
       />,
     );
@@ -58,5 +62,23 @@ describe('<AppointmentsTable />', () => {
     await userEvent.click(firstCheckbox);
     expect(vaccinatedToggle).toBeCalledTimes(1);
     expect(vaccinatedToggle).toHaveBeenCalledWith(appointments[0].id);
+  });
+
+  it('should call the edit', async () => {
+    const editAction = jest.fn();
+    render(
+      <AppointmentsTable
+        appointmentsList={appointments}
+        vaccinatedToggle={jest.fn()}
+        editAction={editAction}
+        isLoading={false}
+      />,
+    );
+
+    const firstButton = screen.getAllByRole('button')[0];
+
+    await userEvent.click(firstButton);
+    expect(editAction).toBeCalledTimes(1);
+    expect(editAction).toHaveBeenCalledWith(appointments[0].id);
   });
 });
