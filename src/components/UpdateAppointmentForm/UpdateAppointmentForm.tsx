@@ -97,7 +97,11 @@ const UpdateAppointmentForm: React.FC<UpdateAppointmentFormProps> = ({
         }}
         onBlur={formik.handleBlur}
       />
-      <Checkbox label="Vacinado" {...getFieldProps('vaccinated')} />
+      <Checkbox
+        label="Vacinado"
+        checked={formValues.vaccinated}
+        {...getFieldProps('vaccinated')}
+      />
 
       <S.ButtonGroup>
         <Button type="submit" fullWidth disabled={isSubmitting}>
